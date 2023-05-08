@@ -6,9 +6,9 @@
 import 'dart:async' as _i4;
 
 import 'package:clean_arch_tdd/core/network/network_info.dart' as _i6;
-import 'package:clean_arch_tdd/features/number_trivia/data/datasources/number_trivia_local_datasource.dart'
+import 'package:clean_arch_tdd/features/number_trivia/data/datasources/number_trivia_local_data_source.dart'
     as _i5;
-import 'package:clean_arch_tdd/features/number_trivia/data/datasources/number_trivia_remote_datasource.dart'
+import 'package:clean_arch_tdd/features/number_trivia/data/datasources/number_trivia_remote_data_source.dart'
     as _i3;
 import 'package:clean_arch_tdd/features/number_trivia/data/models/number_trivia_model.dart'
     as _i2;
