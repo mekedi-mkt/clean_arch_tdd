@@ -4,11 +4,13 @@ import '../error/failures.dart';
 
 class InputConverter {
   Either<Failure, int> stringToUnsignedInteger(String str) {
-    final value = int.tryParse(str);
-    if (value == null || value.isNegative) return Left(InvalidInputFailure());
-    return Right(value);
-
-    // Or use int.parse(str) wrapped in a try catch
+    try {
+      final value = int.parse(str);
+      if (value.isNegative) return Left(InvalidInputFailure());
+      return Right(value);
+    } catch (e) {
+      return Left(InvalidInputFailure());
+    }
   }
 }
 
